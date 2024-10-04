@@ -58,9 +58,10 @@
 
 #flex-section3 .tags ul {
 	display: flex;
+	list-style: none;
 	flex-wrap: wrap;
-    list-style: none;
 	padding: 0;
+	margin:0;
 }
 
 /* end Flexbox Part 3 */
@@ -70,9 +71,9 @@
 
 #grid-section1 .grid {
 	display: grid;
+	grid-gap: 20px;
 	grid-template-columns:repeat(4,1fr);
 	grid-template-rows: 100px 100px;
-	grid-gap: 20px;
 }
 
 /* end Grid Part 1 */
