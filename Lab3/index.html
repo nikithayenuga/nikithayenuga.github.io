@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIP CALCULATOR</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="tip-calculator">
+        <form id="form">
+            <h3>ITMD 541 - Lab 3 - SAINIKITHA YENUGA</h3>
+            <h1>Tip Calculator</h1>
+            <br>
+            <div id="currecyrates">
+                <p>Currency Conversion</p>
+                <p>$1 USD = ¥149.34 JPY for Yen</p>
+                <p>$1 USD = ₹84.07 INR for Rupee</p>
+            </div>
+            <br>
+
+            <label for="selectcurrency" style="font-size: large;">Select Currency:</lable>
+                <select name="select" id="select" disabled>
+                    <option value="dollars">Dollars $</option>
+                    <option value="rupees">Rupee ₹</option>
+                    <option value="yen">Yen ¥</option>
+                </select>
+                <br>
+                <br>
+                <label class="label">Bill Total($):</label>
+                <input type="text" id="total_bill" class="input">
+                <label id="errormsg"></label>
+                <label class="label">Tip:</label>
+                <input type="range" min="0" max="100" id="slider" class="input" value="0" disabled>
+                <label class="label">Tip Percentage(%):</label>
+                <input type="text" disabled id="percentage" class="input">
+                <label class="label" id="tip_amount_label">Tip Amount($):</label>
+                <input type="text" disabled id="calc_tip" class="input">
+                <label class="label" id="totbill">Total Bill With Tip($):</label>
+                <input type="text" disabled id="final_amount" class="input">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
